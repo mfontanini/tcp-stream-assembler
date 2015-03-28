@@ -2,6 +2,7 @@
 #define TCP_STREAM_ASSEMBLER_MEMORY_PAYLOAD_HPP
 
 #include <vector>
+#include <string>
 #include "payload_base.hpp"
 
 namespace tcp_stream_assembler {
@@ -13,6 +14,7 @@ public:
     template <typename ForwardIterator>
     memory_payload(ForwardIterator start, ForwardIterator end);
     memory_payload(container_type data);
+    memory_payload(const std::string& data);
 private:
     std::pair<const_iterator, const_iterator> bounds() const;
 

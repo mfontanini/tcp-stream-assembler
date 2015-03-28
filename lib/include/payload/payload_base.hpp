@@ -9,6 +9,7 @@ namespace tcp_stream_assembler {
 class payload_base {
 public:
     using value_type = char;
+    // TODO: use nice iterator here.
     using const_iterator = const value_type*;
 
     virtual ~payload_base() = default;

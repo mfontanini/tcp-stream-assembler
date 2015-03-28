@@ -10,7 +10,6 @@ namespace tcp_stream_assembler {
 class file_payload : public payload_base {
 public:
     file_payload(const std::string& path);
-
 private:
     std::pair<const_iterator, const_iterator> bounds() const;
 

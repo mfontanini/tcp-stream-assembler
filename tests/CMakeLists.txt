@@ -1,0 +1,7 @@
+find_package(GTest)
+if(GTEST_FOUND)
+    include_directories(${GTEST_INCLUDE_DIRS})
+    add_subdirectory(src)
+else(GTEST_FOUND)
+    message(WARNING "Google test not found. Disabling tests.")
+endif(GTEST_FOUND)
