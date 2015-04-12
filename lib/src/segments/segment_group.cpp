@@ -34,4 +34,9 @@ auto segment_group::end() const -> const_iterator
     return bounds().second;
 }
 
+const string& segment_group::name() const
+{
+    return m_name;
+}
+
 } // tcp_stream_assembler

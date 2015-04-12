@@ -21,6 +21,7 @@ public:
     size_t segment_count() const;
     const_iterator begin() const;
     const_iterator end() const;
+    const std::string& name() const;
 private:
     virtual std::pair<const_iterator, const_iterator> bounds() const = 0;
 
